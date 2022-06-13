@@ -1,3 +1,5 @@
+![CodeSkate](https://github.com/stndc/codeskate/blob/main/assets/img/codeskateGit.jpg)
+
 # CodeSkate
 
 CodeSkate is a framework written in PHP OOP under a minimalist concept. CodeSkate is not based on the MVC model, here the classes must have their respective themes and the connection with the database must be instantiated within the constructor of each class.
@@ -22,10 +24,10 @@ config.php
 ```
 <?php
 
-CONST DB_HOST 		= 'localhost';
-CONST DB_USER 		= 'root';
-CONST DB_PASSWORD 	= '';
-CONST DB_NAME 		= '';
+CONST DB_HOST 	  = 'localhost';
+CONST DB_USER 	  = 'root';
+CONST DB_PASSWORD = '';
+CONST DB_NAME 	  = '';
 ```
 
 ## Bootstrap
