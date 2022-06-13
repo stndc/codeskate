@@ -13,8 +13,8 @@ cd codeskate
 ```
 
 ## Get Started
-Inside the **librarie** you can find the configuration files. To start you must define the path where your project is hosted. You will also need to change the values of the constants to connect to your database
-
+Inside the **librarie** you can find the configuration files. To start you must define the path where your project is hosted. You will also need to change the values of the constants to connect to your database.
+.
 function.php
 ```
 <?php
