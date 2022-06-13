@@ -1,0 +1,11 @@
+.bg-codeskate {
+	background-image: url('../img/codeskate.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #FFF;
+}
+
+.bg-codeskate a{
+	color: #FFF;
+}
