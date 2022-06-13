@@ -9,7 +9,6 @@ class Home extends Theme{
 		// DB Connect
 		$conn = new Dbh();
         $this->conexion = $conn->connect();
-
         $this->theme = new Theme();
 	}
 
