@@ -9,7 +9,7 @@ cd codeskate
 ```
 
 ## Get Started
-Inside the **librarie** you can find the configuration files. To start you must define the path where your project is hosted.
+Inside the **librarie** you can find the configuration files. To start you must define the path where your project is hosted. You will also need to change the values of the constants to connect to your database
 
 function.php
 ```
@@ -18,6 +18,15 @@ function.php
 CONST BASE_URL = 'http://localhost/codeskate'; // Define the path
 ```
 
+config.php
+```
+<?php
+
+CONST DB_HOST 		= 'localhost';
+CONST DB_USER 		= 'root';
+CONST DB_PASSWORD 	= '';
+CONST DB_NAME 		= '';
+```
 
 ## Bootstrap
 CodeSkate incorporates by default Bootstrap 5; https://getbootstrap.com/
