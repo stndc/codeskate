@@ -1,4 +1,8 @@
-![CodeSkate](https://github.com/stndc/codeskate/blob/main/assets/img/codeskateGit.jpg)
+++++
+<p align="center">
+  <img width="100%" src="https://github.com/stndc/codeskate/blob/main/assets/img/codeskateGit.jpg">
+</p>
+++++
 
 # CodeSkate
 
