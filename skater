@@ -1,6 +1,12 @@
 <?php
 
-$filename = $argv[1];
+$filename = $argv[2];
+$class = getopt("class:help", array(
+    $filename,
+    'h:'
+));
+
+if($argv[1] == '-class'){
 
 $fh = fopen('class/'.strtolower($filename).'.php', 'w') or die('Error create file');
 
@@ -12,7 +18,6 @@ $obj    = '$conn = new Dbh();';
 $newobj = '$this->database = new Database();';
 $theme  = '$this->theme = new Theme();';
 
-$datapageid     = '$data["page_id"] = 1;';
 $datapagetitle  = '$data["page_title"] = "'.$classname.'";';
 $funciton       = '$this->theme->getTheme($this, "'.strtolower($filename).'", $data);';
 $param          = '$tres';
@@ -20,12 +25,12 @@ $param          = '$tres';
 $text = <<<_END
 <?php
 
-class $classname extends Theme {
+class $classname extends Theme{
 
     $conn
 
-    public function __construct() {
-
+    public function __construct(){
+    	
         $obj
         $newobj
         $theme
@@ -45,5 +50,15 @@ _END;
 fwrite($fh, $text) or die('Dont write in file');
 fclose($fh);
 echo 'File created. Remember create file '.$classname.' on theme folder';
+
+} elseif($argv[1] == '-help'){
+
+    echo "Skate help \n";
+    echo "usage: [-class] [-help h] \n\n";
+    echo " -class           create class -> 'php skater classname'"
+
+} else{
+    echo "Command Error: type 'skater -help -h'";
+}
 
 ?>
