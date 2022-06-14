@@ -48,8 +48,4 @@ php skater -class classname
 ```
 
 ## Bootstrap
-<<<<<<< HEAD
 CodeSkate incorporates by default Bootstrap 5 - https://getbootstrap.com/
-=======
-CodeSkate incorporates by default Bootstrap 5; https://getbootstrap.com/
->>>>>>> a3cf1366fcc0ef3613bafd47c6987c70dcf08ab3
