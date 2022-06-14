@@ -1,10 +1,12 @@
 <p align="center">
-  <img width="100%" src="https://github.com/stndc/codeskate/blob/main/assets/img/codeskateGit.jpg">
+    <img width="100%" src="https://github.com/stndc/codeskate/blob/main/assets/img/codeskateGit.jpg">
 </p>
 
 # CodeSkate
 
 CodeSkate is a framework written in PHP OOP under a minimalist concept. CodeSkate is not based on the MVC model, here the classes must have their respective themes and the connection with the database must be instantiated within the constructor of each class.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K3D9TH6)
 
 ## Installation
 ```
@@ -33,4 +35,4 @@ CONST DB_NAME 	  = '';
 ```
 
 ## Bootstrap
-CodeSkate incorporates by default Bootstrap 5; https://getbootstrap.com/
+CodeSkate incorporates by default Bootstrap 5 - https://getbootstrap.com/
