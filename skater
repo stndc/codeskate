@@ -6,10 +6,38 @@ $fh = fopen('class/'.strtolower($filename).'.php', 'w') or die('Error create fil
 
 $classname = ucfirst($filename);
 
+// Class structure
+$conn   = 'private $conexion;';
+$obj    = '$conn = new Dbh();';
+$newobj = '$this->database = new Database();';
+$theme  = '$this->theme = new Theme();';
+
+$datapageid     = '$data["page_id"] = 1;';
+$datapagetitle  = '$data["page_title"] = "'.$classname.'";';
+$funciton       = '$this->theme->getTheme($this, "'.strtolower($filename).'", $data);';
+$param          = '$tres';
+
 $text = <<<_END
 <?php
 
+class $classname extends Theme {
 
+    $conn
+
+    public function __construct() {
+
+        $obj
+        $newobj
+        $theme
+    }
+
+    public function $filename($param){
+		$datapageid
+        $datapagetitle
+		$funciton
+	}
+
+}
 
 ?>
 _END;
