@@ -19,7 +19,7 @@ $newobj = '$this->database = new Database();';
 $theme  = '$this->theme = new Theme();';
 
 $datapagetitle  = '$data["page_title"] = "'.$classname.'";';
-$funciton       = '$this->theme->getTheme($this, "'.strtolower($filename).'", $data);';
+$function       = '$this->theme->getTheme($this, "'.strtolower($filename).'", $data);';
 $param          = '$tres';
 
 $text = <<<_END
@@ -30,7 +30,7 @@ class $classname extends Theme{
     $conn
 
     public function __construct(){
-    	
+        
         $obj
         $newobj
         $theme
@@ -38,8 +38,8 @@ class $classname extends Theme{
 
     public function $filename($param){
         $datapagetitle
-		$funciton
-	}
+        $function
+    }
 
 }
 
