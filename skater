@@ -64,7 +64,7 @@ echo 'File created. Remember create file '.$classname.' on theme folder';
     echo "\n";
 
 } else{
-    echo "Command Error: type 'php skater -help -h'";
+    echo "Command Error: Please type 'php skater -help -h'";
 }
 
 ?>
