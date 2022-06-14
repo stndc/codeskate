@@ -32,5 +32,18 @@ CONST DB_PASSWORD = '';
 CONST DB_NAME 	  = '';
 ```
 
+## Skater
+You can use the terminal to create the classes for your project.
+
+Help
+```
+php skater -help h
+```
+
+Create new class
+```
+php skater -class classname
+```
+
 ## Bootstrap
 CodeSkate incorporates by default Bootstrap 5; https://getbootstrap.com/
