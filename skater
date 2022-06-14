@@ -30,7 +30,7 @@ class $classname extends Theme{
     $conn
 
     public function __construct(){
-    	
+        
         $obj
         $newobj
         $theme
@@ -38,8 +38,8 @@ class $classname extends Theme{
 
     public function $filename($param){
         $datapagetitle
-		$funciton
-	}
+        $funciton
+    }
 
 }
 
@@ -64,7 +64,7 @@ echo 'File created. Remember create file '.$classname.' on theme folder';
     echo "\n";
 
 } else{
-    echo "Command Error: type 'skater -help -h'";
+    echo "Command Error: Please type 'php skater -help -h'";
 }
 
 ?>
