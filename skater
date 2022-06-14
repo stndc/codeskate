@@ -1,5 +1,21 @@
 <?php
 
+$filename = $argv[1];
 
+$fh = fopen('class/'.strtolower($filename).'.php', 'w') or die('Error create file');
+
+$classname = ucfirst($filename);
+
+$text = <<<_END
+<?php
+
+
+
+?>
+_END;
+
+fwrite($fh, $text) or die('Dont write in file');
+fclose($fh);
+echo 'File created. Remember create file '.$classname.' on theme folder';
 
 ?>
