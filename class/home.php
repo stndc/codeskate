@@ -13,9 +13,9 @@ class Home extends Theme{
 	}
 
 	public function home($tres){
-		$data['page_id'] = 1;
-		$data['page_title'] = 'CodeSkate';
-		$this->theme->getTheme($this, 'home', $data);
+		$data["page_id"] = 1;
+		$data["page_title"] = "CodeSkate";
+		$this->theme->getTheme($this, "home", $data);
 	}
 
 }
