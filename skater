@@ -1,7 +1,8 @@
 <?php
 
 $filename = $argv[2];
-$class = getopt("class:help", array(
+$class = getopt("class:theme:help", array(
+    $filename,
     $filename,
     'h:'
 ));
@@ -49,6 +50,10 @@ _END;
 fwrite($fh, $text) or die('Dont write in file');
 fclose($fh);
 echo 'File created. Remember create file '.$classname.' on theme folder';
+
+} elseif($argv[1] == '-theme'){
+
+    echo "\e[0;32m#\e[0m ".$filename.", folder created";
 
 } elseif($argv[1] == '-help'){
 
