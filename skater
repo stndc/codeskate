@@ -53,7 +53,28 @@ echo 'File created. Remember create file '.$classname.' on theme folder';
 
 } elseif($argv[1] == '-theme'){
 
-    echo "\e[0;32m#\e[0m ".$filename.", folder created";
+    if(!file_exists('theme/'.ucfirst($filename)) AND !is_dir('theme/'.ucfirst($filename))){
+
+        mkdir('theme/'.ucfirst($filename), 0755, true);
+
+        $fht = fopen('theme/'.ucfirst($filename).'/'.strtolower($filename).'.php', 'w') or die('Error create file');
+
+        $themetext = <<<_END
+        <div class="container">
+            <h1>$filename</h1>
+        </div>
+        _END;
+
+        fwrite($fht, $themetext) or die('Dont write in file');
+        fclose($fht);
+
+        echo "\e[0;32mok\e[0m ".ucfirst($filename).", folder created";
+
+    } else{
+        echo ucfirst($filename)." no";
+    }
+
+    
 
 } elseif($argv[1] == '-help'){
 
@@ -65,6 +86,7 @@ echo 'File created. Remember create file '.$classname.' on theme folder';
     echo "Skater \e[1;30mby\e[0m \e[0;30;42mstndc\e[0m\n";
     echo "usage: \e[0;32m[-class] [-help h]\e[0m\n\n";
     echo " -class           create class -> \e[1;30mphp skater -class classname\e[0m\n";
+    echo " -theme           create theme folder and file -> \e[1;30mphp skater -theme themename\e[0m\n";
     echo " -help h          help -> \e[1;30mphp skater -help h\e[0m\n";
     echo "\n";
 
