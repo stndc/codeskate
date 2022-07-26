@@ -1,6 +1,6 @@
 <?php
 
-CONST BASE_URL = 'http://localhost/Nube/codeskate';
+CONST BASE_URL = 'http://localhost/codeskate';
 
 function base_url(){
 	return BASE_URL;

@@ -15,7 +15,7 @@ if($argv[1] == '-class'){
     // Class Structure
     $conn   = 'private $conexion;';
     $obj    = '$conn = new Dbh();';
-    $newobj = '$this->database = new Database();';
+    $newobj = '$this->conexion = $conn->connect();';
     $theme  = '$this->theme = new Theme();';
 
     $datapagetitle  = '$data["page_title"] = "'.$classname.'";';
