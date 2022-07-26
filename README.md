@@ -45,6 +45,10 @@ php skater -help h
 Create new class
 ```
 php skater -class classname
+```
+
+Create new theme
+```
 php skater -theme classname
 ```
 
