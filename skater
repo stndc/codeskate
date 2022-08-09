@@ -85,8 +85,8 @@ if($argv[1] == '-class'){
     echo "|__   | '_| .'|  _| -_|  _|  |___|     | -_| | . |\n";
     echo "|_____|_,_|__,|_| |___|_|        |__|__|___|_|  _|\n";
     echo "                                             |_|  \n";
-    echo "Skater \e[1;30mby\e[0m \e[0;30;42mstndc\e[0m\n";
-    echo "usage: \e[0;32m[-class] \e[0;32m[-theme] [-help h]\e[0m\n\n";
+    echo "Skater \e[1;30mby\e[0m \e[0;32mSTNDC\e[0m\n";
+    echo "Usage: \e[0;32m[-class] \e[0;32m[-theme] [-help h]\e[0m\n\n";
     echo " -class           create class -> \e[1;30mphp skater -class classname\e[0m\n";
     echo " -theme           create theme folder and file -> \e[1;30mphp skater -theme themename\e[0m\n";
     echo " -help h          help -> \e[1;30mphp skater -help h\e[0m\n";
