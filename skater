@@ -1,7 +1,8 @@
 <?php
 
-$filename = $argv[2];
-$class = getopt("class:theme:help", array(
+$filename = $argv[1];
+$class = getopt("class:theme:help:version", array(
+    $filename,
     $filename,
     $filename,
     'h:'
@@ -73,6 +74,10 @@ if($argv[1] == '-class'){
         echo "\e[0;31m##\e[0m The folder ".ucfirst($filename)." exists";
     }
 
+} elseif($argv[1] == '-version'){
+
+    echo "v2.0.0";
+
 } elseif($argv[1] == '-help'){
 
     echo " _____ _       _                  _____     _     \n";
@@ -81,11 +86,12 @@ if($argv[1] == '-class'){
     echo "|_____|_,_|__,|_| |___|_|        |__|__|___|_|  _|\n";
     echo "                                             |_|  \n";
     echo "Skater \e[1;30mby\e[0m \e[0;30;42mstndc\e[0m\n";
-    echo "usage: \e[0;32m[-class] [-help h]\e[0m\n\n";
+    echo "usage: \e[0;32m[-class] \e[0;32m[-theme] [-help h]\e[0m\n\n";
     echo " -class           create class -> \e[1;30mphp skater -class classname\e[0m\n";
     echo " -theme           create theme folder and file -> \e[1;30mphp skater -theme themename\e[0m\n";
     echo " -help h          help -> \e[1;30mphp skater -help h\e[0m\n";
     echo "\n";
+    echo " -version         CodeSkate version\n";
 
 } else{
     echo "Command Error: Please type 'php skater -help h'";
