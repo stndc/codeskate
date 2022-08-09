@@ -6,7 +6,7 @@
 <title><?=$data['page_title'];?></title>
 
 <!-- Custon CSS -->
-<link rel="stylesheet" href="<?=base_url();?>/assets/css/style.css">
+<link rel="stylesheet" href="<?=base_url();?>/">
 
 <style type="text/css">
 *, ::after, ::before {
