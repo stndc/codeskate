@@ -6,7 +6,7 @@
 <h5>A PHP Framework</h5>
 <p>Thank you for using CodeSkate!</p>
 <p>
-<a href="https://github.com/stndc/codeskate/blob/main/README.md">Doc</a>
+<a href="https://github.com/stndc/codeskate/blob/main/README.md" target="_blank">Doc</a>
 </p>
 </div>
 </div>

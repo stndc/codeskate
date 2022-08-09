@@ -4,7 +4,7 @@
 * CodeSkate
 * Author: STNDC
 * Version: 2.0.0
-* Blog: https://stndc.tumblr.com
+* Blog: https://ko-fi.com/stndc
 */
 
 require_once 'librarie/db.php';
