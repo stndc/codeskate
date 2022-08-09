@@ -3,7 +3,7 @@
 /*
 * CodeSkate
 * Author: STNDC
-* Version: 1.2.10
+* Version: 2.0.0
 * Blog: https://stndc.tumblr.com
 */
 
