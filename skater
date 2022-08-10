@@ -1,10 +1,10 @@
 <?php
 
-$filename = $argv[1];
-$class = getopt("class:theme:help:version", array(
+$filename = $argv[2];
+$class = getopt("class:theme:version:help", array(
     $filename,
     $filename,
-    $filename,
+    'v:',
     'h:'
 ));
 
@@ -91,7 +91,7 @@ if($argv[1] == '-class'){
     echo " -theme           create theme folder and file -> \e[1;30mphp skater -theme themename\e[0m\n";
     echo " -help h          help -> \e[1;30mphp skater -help h\e[0m\n";
     echo "\n";
-    echo " -version         CodeSkate version\n";
+    echo " -version v       CodeSkate version\n";
 
 } else{
     echo "Command Error: Please type 'php skater -help h'";
