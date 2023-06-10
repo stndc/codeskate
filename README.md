@@ -6,52 +6,44 @@
 
 # CodeSkate
 
-CodeSkate is a framework written in PHP OOP under a minimalist concept. CodeSkate is not based on the MVC model, here the classes must have their respective themes and the connection with the database must be instantiated within the constructor of each class.
+CodeSkate is a framework written in PHP OOP under a minimalist concept. CodeSkate is not based on the MVC model, here the classes inherit the connection to the database and are complemented by a group of functions designed to optimize working time.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K3D9TH6)
 
-## Installation
+## Get Started
 ```
 git clone https://github.com/stndc/codeskate.git
 cd codeskate
 ```
 
-## Get Started
-Inside the **librarie** you can find the configuration files. To start you must define the path where your project is hosted. You will also need to change the values of the constants to connect to your database.
 
-function.php
+functions.php
 ```
 <?php
 
-CONST BASE_URL = 'http://localhost/codeskate'; // Define the path
+require_once 'helpers/functions.php';
 ```
 
 config.php
+
+You can configure two connections. One local and the other with the IP of the server you want.
+
 ```
 <?php
 
-CONST DB_HOST 	  = 'localhost';
-CONST DB_USER 	  = 'root';
-CONST DB_PASSWORD = '';
-CONST DB_NAME 	  = '';
-```
-
-## Skater
-You can use the terminal to create the classes for your project.
-
-Help
-```
-php skater -help h
-```
-
-Create new class
-```
-php skater -class classname
-```
-
-Create new theme
-```
-php skater -theme classname
+if($_SERVER['SERVER_NAME'] == 'localhost'){
+    // Localhost
+    define("DB_HOST", "localhost");
+    define("DB_USER", "root");
+    define("DB_PASS", "");
+    define("DB_NAME", "dbname");
+} else{
+    // DB Extern
+    define("DB_HOST", "");
+    define("DB_USER", "");
+    define("DB_PASS", "");
+    define("DB_NAME", "");
+}
 ```
 
 ## License

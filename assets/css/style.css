@@ -1,0 +1,14 @@
+
+/*
+* CodeSkate
+* Author: STNDC
+* Version: 3.x
+* Blog: https://ko-fi.com/stndc
+*/
+
+.bg-skater {
+	background: url('../img/codeskate.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
