@@ -11,8 +11,6 @@ CodeSkate is a framework written in PHP OOP under a minimalist concept. CodeSkat
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K3D9TH6)
 
 ## Get Started
-
-## Installation
 ```
 git clone https://github.com/stndc/codeskate.git
 cd codeskate
